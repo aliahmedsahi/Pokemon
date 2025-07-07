@@ -1,0 +1,424 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  color: #213547;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white !important;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none;
+}
+a:hover {
+  color: #535bf2;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
+
+/* ===================== */
+/* Login Styles (lg-*)   */
+/* ===================== */
+
+.lg-auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.lg-auth-container {
+  display: flex;
+  width: 850px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Panels */
+.lg-login-panel,
+.lg-signup-panel {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lg-login-panel {
+  background: #ffffff;
+}
+
+.lg-signup-panel {
+  background: #20c997;
+  color: #fff;
+  text-align: center;
+}
+
+.lg-divider {
+  margin-bottom: 1rem;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.lg-login-title {
+  color: #20c997;
+}
+
+/* .lg-forgot-password {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+} */
+
+.lg-login-button {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #20c997;
+  border: none;
+}
+
+.p-inputtext,
+.lg-input-text {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: background-color 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.p-inputtext {
+  border: 1px solid #20c997;
+  background-color: #f5f5f5;
+}
+
+.p-inputtext:focus {
+  outline: none;
+  border-color: #20c997;
+}
+
+.lg-input-text {
+  border: none;
+  background-color: #f0f2f5;
+  color: #495057;
+}
+
+.p-inputtext,
+input[type="password"],
+input[type="text"],
+input[type="email"] {
+  background-color: #f5f5f5 !important;
+  color: #333 !important;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.75rem;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.lg-input-text:focus {
+  outline: none;
+  background-color: #e7efec;
+}
+
+.lg-eye-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+}
+
+
+.text-warning {
+  color: #d9534f;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.sp-signup-panel {
+  background: #ffffff;
+  color: #333;
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sp-auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.sp-auth-container {
+  display: flex;
+  width: 850px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sp-login-panel,
+.sp-signup-panel {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sp-login-panel {
+  background: #20c997;
+  color: #fff;
+  text-align: center;
+}
+
+.sp-signup-panel {
+  background: #ffffff;
+  color: #333;
+}
+
+.sp-h1 {
+  color: #20c997;
+  margin-bottom: 1rem;
+}
+
+.sp-divider {
+  margin: 1rem 0;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.sp-login-button {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #20c997;
+  border: none;
+}
+
+.sp-white-btn {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.sp-eye-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+}
+
+
+
+/* ============================= */
+/* Pokémon Search Styles (spp-) */
+/* ============================= */
+
+.spp-auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.spp-auth-container {
+  width: 1000px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.spp-search-panel h1 {
+  color: #20c997;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.spp-search-input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.spp-input-text {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #f0f2f5;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #000;
+}
+
+.spp-input-text::placeholder {
+  color: #888;
+}
+
+.spp-input-text:focus {
+  outline: none;
+  background-color: #e7efec;
+  box-shadow: inset 0 0 8px rgba(32, 201, 151, 0.3);
+}
+
+.spp-search-button {
+  background-color: #20c997;
+  border: none;
+}
+
+.spp-pokemon-result {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.spp-pokemon-name {
+  font-size: 1.5rem;
+  color: #20c997;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.spp-pokemon-details,
+.spp-pokemon-details div,
+.spp-pokemon-details strong,
+.spp-pokemon-types,
+.spp-pokemon-types strong {
+  color: #000;
+  text-align: center;
+}
+
+.spp-pokemon-details {
+  text-align: left;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.spp-pokemon-types {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.spp-type-badge {
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.spp-d-flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  text-align: left;
+}
+
+.spp-details-section {
+  flex: 1;
+}
+
+.spp-image-section {
+  flex-shrink: 0;
+}
+
+.spp-pokemon-image {
+  width: 140px;
+  height: 140px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.pokemon-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  font-weight: bold;
+  width: 100px;
+  display: inline-block;
+}
+
+.value {
+  flex: 1;
+}
+
+.type-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.type-badge {
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.detail-separator {
+  border: none;
+  border-bottom: 1px solid #eee;
+  margin: 6px 0;
+}
+
+.spp-topbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  background-color: #ffffff;
+}
